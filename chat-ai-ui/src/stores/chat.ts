@@ -16,7 +16,7 @@ interface FormattedMessage {
 
 
 export const useChatStore = defineStore("chat", () => {
-  const messages = ref<{role: stringifyQuery; content: string}[]>([]);
+  const messages = ref<{role: string; content: string}[]>([]);
   const isLoading = ref(false);
   const userStore = useUserStore();
 
